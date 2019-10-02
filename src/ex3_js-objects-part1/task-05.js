@@ -7,7 +7,7 @@ function returnCopy(obj) {
       copy[key] = obj[key];
     }
   }
-  return copyObj;
+  return copy;
 };
 
 module.exports = returnCopy;

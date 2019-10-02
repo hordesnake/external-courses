@@ -7,7 +7,7 @@ function PropertyObject(string, obj) {
       return result;
     }
   }
-  resultObj[string] = 'new';
+  result[string] = 'new';
   return result;
 };
 
