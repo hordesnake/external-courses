@@ -1,8 +1,8 @@
 'use strict';
 
 function createEmptyObjWithoutProt() {
-  const obj = Object.create();
-  return obj;
+  Object.create();
+  return;
 }
 
 module.exports = createEmptyObjWithoutProt;
