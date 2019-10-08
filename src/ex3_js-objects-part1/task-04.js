@@ -1,14 +1,14 @@
 'use strict';
 
-function PropertyObject(string, obj) {
+function propertyObject(property, obj) {
   const result = obj;
   for (let key in result) {
-    if (key === string) {
+    if (key === property) {
       return result;
     }
   }
-  result[string] = 'new';
+  resultObj[property] = 'new';
   return result;
 };
 
-module.exports = PropertyObject;
+module.exports = propertyObject;

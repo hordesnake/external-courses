@@ -1,12 +1,12 @@
 'use strict';
 
-function booLean(string, obj) {
+function checkProperty(property, obj) {
   for (let key in obj) {
-    if (key === string) {
+    if (key === property) {
       return true;
     }
   }
   return false;
 };
 
-module.exports = booLean;
+module.exports = checkProperty;

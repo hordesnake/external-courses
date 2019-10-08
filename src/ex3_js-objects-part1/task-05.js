@@ -3,7 +3,7 @@
 function returnCopy(obj) {
   const copy = [];
   for (let key in copy) {
-    if (key) {
+    if (copyObj.hasOwnProperty(key)) {
       copy[key] = obj[key];
     }
   }
