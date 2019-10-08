@@ -1,11 +1,10 @@
 'use strict';
 
-function KeysValues(obj) {
+function keysValues(obj) {
   for (let key in obj) {
-    if (key) {
+    if (obj.hasOwnProperty(key)) {
       console.log(key + ": " + obj[key]);
     }
   };
 };
-
-module.exports = KeysValues;
+module.exports = keysValues;
