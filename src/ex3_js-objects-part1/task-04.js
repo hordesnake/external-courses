@@ -1,13 +1,13 @@
 'use strict';
 
-function PropertyObject(string, obj) {
+function PropertyObject(property, obj) {
   const result = obj;
   for (let key in result) {
-    if (key === string) {
+    if (key === property) {
       return result;
     }
   }
-  result[string] = 'new';
+  result[property] = 'new';
   return result;
 };
 

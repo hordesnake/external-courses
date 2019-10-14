@@ -1,8 +1,8 @@
 'use strict';
 
-function booLean(string, obj) {
+function booLean(property, obj) {
   for (let key in obj) {
-    if (key === string) {
+    if (key === property) {
       return true;
     }
   }
