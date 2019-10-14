@@ -13,7 +13,7 @@ function diffElements(arr) {
       }
     }
   });
-  return result;
+  return retArr;
 }
 
 module.exports = diffElements;
