@@ -1,6 +1,6 @@
 'use strict';
 
-function returnDeepObj(obj) {
+function createDeepCopy(obj) {
   let clone;
   if (obj.length) {
     clone = [];
@@ -9,7 +9,7 @@ function returnDeepObj(obj) {
   }
   for (let key in obj) {
     if (typeof obj[key] === "object") {
-      clone[key] = returnDeepObj(obj[key]);
+      clone[key] = createDeepCopy(obj[key]);
     } else {
       clone[key] = obj[key];
     }
@@ -17,4 +17,4 @@ function returnDeepObj(obj) {
   return clone;
 }
 
-module.exports = returnDeepObj;
+module.exports = createDeepCopy;
