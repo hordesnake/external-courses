@@ -1,9 +1,9 @@
 'use strict';
 
-function outputArr(arr) {
+function printArrayElements(arr) {
   for (let i = 0; i < arr.length; i++) {
     console.log(i + 1 + ' элемент массива: ' + arr[i]);
   }
   console.log('Длина массива: ' + arr.length);
 }
-module.exports = outputArr;
+module.exports = printArrayElements;
