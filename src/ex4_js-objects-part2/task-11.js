@@ -6,7 +6,7 @@ function countCharacter(str) {
   let count = 0;
   for (let i = 0; i < strArr.length; i++) {
     count++;
-    if (arrStr[i] !== strArr[i + 1]) {
+    if (strArr[i] !== strArr[i + 1]) {
       console.log(strArr[i] + " : " + count);
       count = 0;
     }
