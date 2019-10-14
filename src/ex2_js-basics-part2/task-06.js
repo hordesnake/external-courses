@@ -1,12 +1,18 @@
 'use strict';
 
 function checkPrime(number) {
-  if (number > 1000) return "Данные неверны";
-  if (number === 0 || number === 1) return "Число " + number + " принадлежит к классу нейтральных чисел";
-  for (let i = 2; i < number; i++) {
-    if (!(number % i)) return "Число " + number + " - составное число";
+  let result;
+  if (number > 1 && number < 1000) {
+    result = `Число ${n} - простое число`;
+    for (let i = 2; i < number; i++) {
+      if (number % i === 0) {
+        result = `Число ${number} - составное число`;
+      }
+    }
+  } else {
+    result = 'Данные неверны';
   }
-  return "Число " + number + " - простое число";
-};
+  return result;
+}
 
 module.exports = checkPrime;
