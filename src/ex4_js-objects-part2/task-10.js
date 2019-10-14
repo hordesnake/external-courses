@@ -4,7 +4,7 @@ function reverseStr(str) {
   let strArr = str.split('');
   let strReverce = [];
   for (let i = strArr.length - 1; i > -1; i--) {
-    strReverce.push(arrStr[i]);
+    strReverce.push(strArr[i]);
   }
   strReverce.join('');
   return;

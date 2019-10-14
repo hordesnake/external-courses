@@ -1,7 +1,7 @@
 'use strict';
 
 function createEmptyObjWithoutProt() {
-  return Object.create();
+  return Object.create(null);
 }
 
 module.exports = createEmptyObjWithoutProt;

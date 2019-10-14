@@ -1,4 +1,5 @@
 'use strict';
+
 function countCharacter(str) {
   let strArr = str.split('');
   strArr = strArr.sort();
