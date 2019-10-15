@@ -1,14 +1,9 @@
 'use strict';
 
 function passSubstrAfterNum(str, strArr, num) {
-  let arr = str.split(' ');
-  for (let i = 0; i < strArr.length; i++) {
-    if (num === i + 1) {
-      arr.splice(i + 2, 0, strArr);
-    }
-  }
-  arr.join(' ');
-  return;
+  let strNew = str.split(' ');
+  return `${newStr.slice(0, num + 1).join(' ')} 
+  ${strArr} ${strNew.slice(num + 1).join(' ')}`;
 }
 
 module.exports = passSubstrAfterNum;
