@@ -1,30 +1,51 @@
-'use strict';
+const Calculator = (function Calculator() {
+  let result = 0;
 
-const Calculator = {
-    currentState: 0,
-    add(n = 0){   
-        Calculator.currentState += n;
-        return Calculator.add;
-    },
-    subtract(n = 0) {
-        Calculator.currentState -= n;
-        return Calculator.subtract;
-    },
-    divide(n = 1) {
-        Calculator.currentState /= n;
-        return Calculator.divide;
-    },
-    multiply(n = 1) {
-        Calculator.currentState *= n;
-        return Calculator.multiply;
-    },   
-    getResult() {
-        return Calculator.currentState;
-    },
-    reset() {
-        Calculator.currentState = 0;
-        return Calculator.currentState;
-    }  
-};
+  function add(num) {
+    if (num) {
+      result += num;
+    }
+    return;
+  }
+
+  function subtract(num) {
+    if (num) {
+      result -= num;
+    }
+    return;
+  }
+
+  function divide(num) {
+    if (num) {
+      result /= num;
+    }
+    return;
+  }
+
+  function multiply(num) {
+    if (num) {
+      result *= num;
+    }
+    return;
+  }
+
+  function getResult() {
+    return;
+  }
+
+  function reset() {
+    result = 0;
+    return;
+  }
+
+  return {
+    add,
+    subtract,
+    divide,
+    multiply,
+    getResult,
+    reset
+  }
+});
 
 module.exports = Calculator;
