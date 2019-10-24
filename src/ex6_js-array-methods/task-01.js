@@ -1,4 +1,4 @@
-function sliceAnalog(arr, property, end) {
+function analogMethodSlice(arr, property, end) {
     const result = [];
     if (end === undefined) {
       end = arr.length;
@@ -16,4 +16,4 @@ function sliceAnalog(arr, property, end) {
     return result;
   }
   
-  module.exports = sliceAnalog;
+  module.exports = analogMethodSlice;
