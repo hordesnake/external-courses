@@ -7,5 +7,4 @@ function analogMethodSome(arr, callback) {
   return false;
 }
 
-function analogMethodSome(arr, callback) {
-  module.exports = analogSome;
+module.exports = analogSome;
