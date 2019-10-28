@@ -1,0 +1,260 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Task-04</title>
+  <link rel="stylesheet" href="./task-04.css">
+  <style>
+    .list {
+      background-color: #008100;
+    }
+    .circle {
+      list-style-type: circle;
+    }
+    .cat {
+      width: 360px;
+      height: 250px;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="head">HTML Basics</h1>
+  <div class="lists">
+    <h2 class="block__header">Lists</h2>
+    <div class="lists__row center">
+      <div class="lists__cell">
+        <h3>Ordered list</h3>
+        <ol>
+          <li>first item</li>
+          <li>second item</li>
+          <li>third item</li>
+          <li>fourth item</li>
+          <li>fifth item</li>
+        </ol>
+      </div>
+      <div class="lists__cell">
+        <h3>Unordered list</h3>
+        <ul>
+          <li>A</li>
+          <li>D</li>
+          <li>C</li>
+          <li>D</li>
+          <li>E</li>
+        </ul>    
+      </div>
+    </div>
+    <div class="lists__row center">
+      <div class="lists__cell">
+        <h3>Description List</h3>
+        <dl>
+          <dt>Name</dt>
+          <dd>Godzilla</dd>
+          <dt>Born</dt>
+          <dd>1952</dd>
+          <dt>Birthplace</dt>
+          <dd>Japan</dd>
+          <dt>Color</dt>
+          <dd>Green</dd>
+        </dl>
+      </div>
+      <div class="lists__cell">
+        <h3>Nested list</h3>
+        <ul>
+          <li>List item one</li>
+          <li>List item two with subitems:
+            <ul class="circle">
+              <li>Subitem 1
+                <ul style="list-style-type: square;">
+                  <li>SubSubitem 1</li>
+                  <li>SubSubitem 2</li>
+                </ul>
+              </li>
+              <li>Subitem 2</li>
+            </ul>
+          </li>
+          <li>Final list item</li>
+        </ul>  
+      </div>
+      <div class="lists__cell">
+        <h3>List with links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <hr>
+
+  <h2 class="block__header">Paragraphs</h2>
+  <div class="par__content">
+    <p>Mauris sollicitudin massa quis nibh finibus vulputate. Praesent tempus lobortis sem in viverra. Integer ornare lorem eu diam scelerisque, tristique auctor dui tristique. Fusce sit amet ex ut ante gravida venenatis. Fusce sit amet urna et mauris malesuada pellentesque vitae interdum tellus. In risus neque, elementum eget est at, mollis congue nibh. Phasellus vitae tincidunt nunc. Maecenas bibendum erat nec tortor tempor sagittis.</p>
+  </div>
+  <div class="par__text">
+        <p>Mustard eel, coley; eel cod porgy poolfish smalltooth sawfish soldierfish flyingfish northern pearleye, sand tilefish powen lemon shark darter grayling clown triggerfish. European flounder tui chub; aruana clownfish alewife glass catfish turbot smalltooth sawfish! Rock beauty searobin yellow weaver bull shark.<br>
+            Mackerel shark mosquitofish streamer fish salamanderfish ballan wrasse Atlantic <br>
+            Sevan trout knifejaw whiptail gulper velvetfish Sacramento blackfish <br>
+            Ribbon eel yellow jack ocean sunfish Red salmon. Bluntnose knifefish Atlantic <br>
+            Zebra loach, sandfish tigerperch ray luminous hake gulper eel platy sleeper shark <br>
+            Rock beauty searobin yellow weaver bull shark <br>
+            Saw shark, "pilot fish shark leopard danio megamouth shark Indian mul <br>
+            Shark taimen, Antarctic icefish sailfish lemon sole deep sea smelt </p>
+  </div>
+  
+  <hr>
+
+  <h2 class="block__header">Tables</h2>
+  <div class="table center">
+    <table> 
+        <tr>
+          <th>First name</th>
+          <th>Last name</th>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+        </tr>
+      </table>
+  </div>
+
+
+  <hr>
+
+  <h2 class="block__header">Image</h2>
+  <div class="center">
+    <img src="https://cdn3.iconfinder.com/data/icons/cat-power-premium/120/cat_sleep-512.png" alt="cat" class="cat">
+    <img src="https://www.smileysapp.com/emojis/sleepy-cat.png" alt="cat2" class="cat">
+    <img src="https://images.vexels.com/media/users/3/155375/isolated/preview/39dcac3eed0f79211d22123cb2aa6717-sleepy-cat-illustration-by-vexels.png" alt="cat" class="cat">    
+  </div>
+
+  <hr>
+
+  <h2 class="block__header">Pre tag</h2>
+  <pre class="center">
+
+   let;
+   var;
+   const;
+
+  </pre>
+</body>
+<style>
+body {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.center {
+  display: flex;
+  justify-content: space-around;
+}
+
+.head {
+  padding: 20px;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+  border-radius: 100px;
+  background: linear-gradient(90deg,#ffaa0caf, #02d9ffcc,#dbff0caf);
+}
+
+.block__header {
+  text-align: center;
+  font-family: 'Righteous', cursive;
+  letter-spacing: 10px;
+  font-size: 30px;
+}
+.block__header::before,
+.block__header::after {
+  content: "★";
+  color: #3f3f3f;
+}
+
+.lists__row {
+  align-items: center;
+}
+
+.lists__cell {
+  margin: 20px;
+  padding: 10px 50px;
+  border-radius: 20px;
+  background: linear-gradient(#a2ff0caf, #00ccffb0);
+}
+
+.par__content {
+  word-spacing: 5px;
+  font-style: italic;
+}
+
+.par__text {
+  letter-spacing: 5px;
+  font-weight: bold;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #d68a33;
+}
+
+
+table {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 20px;
+  border-radius: 10px;
+  border-spacing: 0;
+  text-align: center;
+}
+
+th {
+  background: #cebceb;
+  color: rgb(0, 0, 0);
+  text-shadow: 0 1px 1px rgb(255, 255, 255);
+  padding: 10px 20px;
+}
+
+th, td {
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  border-color: white;
+}
+
+th:first-child {
+  border-top-left-radius: 10px;
+}
+
+th:last-child {
+  border-top-right-radius: 10px;
+  border-right: none;
+}
+
+td {
+  padding: 10px 20px;
+  background: #a9f891;
+}
+
+tr:last-child td:first-child {
+  border-radius: 0 0 0 10px;
+}
+
+tr:last-child td:last-child {
+  border-radius: 0 0 10px 0;
+}
+
+pre {
+  background-color: #ccc6c6;
+  border-radius: 12px;
+  line-height: 30px;
+  font-size: 15px;
+  font-family: 'Press Start 2P', cursive;
+}
+</style>
+</html>
