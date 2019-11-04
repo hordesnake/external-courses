@@ -1,0 +1,12 @@
+ .list {
+   background-color: #008100;
+ }
+
+ .circle {
+   list-style-type: circle;
+ }
+
+ .cat {
+   width: 360px;
+   height: 250px;
+ }
