@@ -1,16 +1,13 @@
-function reduceAnalog(arr, callback, initialValue) {
-  let result = 0;
-  let i = 0;
-  if (initialValue) {
-    result = initialValue;
-  } else {
-    result = arr[0];
-    i++
+function reduceAnalog(array, callback, initValue) {
+  let previousValue = array[0], i = 1;
+  if (arguments.length > 2) {
+      previousValue = initValue;
+      i = 0;
   }
-  for (i; i < arr.length; i++) {
-    result = callback(result, arr[i], i, arr);
+  for (; i < array.length; i++) {
+      previousValue = callback(previousValue , array[i], i, array) 
   }
-  return result;
+  return previousValue;
 }
 
 module.exports = reduceAnalog;
