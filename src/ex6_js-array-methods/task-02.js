@@ -1,6 +1,6 @@
-function analogMethodSome(arr, callback) {
+function analogMethodSome(arr) {
   for (let i = 0; i < arr.length; i++) {
-    if (callback(arr[i], i, arr)) {
+    if ((arr[i], i, arr)) {
       return true;
     }
   }
