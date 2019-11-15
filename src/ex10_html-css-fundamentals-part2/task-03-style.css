@@ -1,0 +1,16 @@
+.table-row:nth-child(odd) {
+  background: #e8edf4;
+}
+
+.table-row:nth-child(even) {
+  background: #f2f6fa;
+}
+
+.table-row:hover {
+  background: #e2e5e9;
+}
+
+.table-cell:first-child {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
