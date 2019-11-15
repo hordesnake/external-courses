@@ -1,0 +1,21 @@
+.table {
+  font-family: Helvetica, sans-serif;
+}
+
+.table-head {
+  text-transform: uppercase;
+  color: #7586ab;
+  background: #e3eaf3;
+  padding: 5px;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.table-row {
+  color: #4c637b;
+  font-size: 14px;
+}
+
+.table-cell {
+  padding: 16px;
+}
